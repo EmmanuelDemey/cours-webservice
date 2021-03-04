@@ -27,6 +27,7 @@
     "@nestjs/sequelize": "^0.2.0",
     "class-transformer": "^0.3.1",
     "class-validator": "^0.12.2",
+    "elastic-apm-node": "^3.11.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
     "reflect-metadata": "^0.1.13",

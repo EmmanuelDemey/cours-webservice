@@ -10,17 +10,17 @@ import { SequelizeModule } from '@nestjs/sequelize';
         SequelizeModule.forFeature([Person]),
     ],
     providers: [
-        PersonService, 
+        PersonService,
         {
             provide: 'BDD_CONNEXION',
             useValue: mysql.createConnection({
-                host     : 'localhost',
+                host: 'localhost',
                 port: 3307,
-                user     : 'root',
-                password : 'root',
-                database : 'test_db'
+                user: 'root',
+                password: 'root',
+                database: 'test_db'
             })
         }
     ]
 })
-export class ProductModule {}
+export class ProductModule { }
