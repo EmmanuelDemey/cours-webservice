@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { HttpModule, Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { Person, PersonService } from './person';
 import * as mysql from 'mysql2'
@@ -7,6 +7,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
 @Module({
     controllers: [AppController],
     imports: [
+        HttpModule,
         SequelizeModule.forFeature([Person]),
     ],
     providers: [
